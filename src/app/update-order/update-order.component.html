@@ -1,0 +1,21 @@
+<h3>Update Order</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Customer Name</label>
+      <input type="text" class="form-control" id="customerName" required [(ngModel)]="order.customerName" name="customerName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Items</label>
+      <input type="text" class="form-control" id="items" required [(ngModel)]="order.items" name="items">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Total Price</label>
+      <input type="text" class="form-control" id="totalPrice" required [(ngModel)]="order.totalPrice" name="totalPrice">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
